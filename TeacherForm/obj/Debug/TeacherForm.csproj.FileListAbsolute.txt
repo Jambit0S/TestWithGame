@@ -1,0 +1,13 @@
+C:\Users\MAGI\source\repos\TeacherForm\bin\Debug\TeacherForm.exe.config
+C:\Users\MAGI\source\repos\TeacherForm\bin\Debug\TeacherForm.exe
+C:\Users\MAGI\source\repos\TeacherForm\bin\Debug\TeacherForm.pdb
+C:\Users\MAGI\source\repos\TeacherForm\obj\Debug\TeacherForm.csprojAssemblyReference.cache
+C:\Users\MAGI\source\repos\TeacherForm\obj\Debug\TeacherForm.Form1.resources
+C:\Users\MAGI\source\repos\TeacherForm\obj\Debug\TeacherForm.Properties.Resources.resources
+C:\Users\MAGI\source\repos\TeacherForm\obj\Debug\TeacherForm.csproj.GenerateResource.cache
+C:\Users\MAGI\source\repos\TeacherForm\obj\Debug\TeacherForm.csproj.CoreCompileInputs.cache
+C:\Users\MAGI\source\repos\TeacherForm\obj\Debug\TeacherForm.exe
+C:\Users\MAGI\source\repos\TeacherForm\obj\Debug\TeacherForm.pdb
+C:\Users\MAGI\source\repos\TeacherForm\bin\Debug\Newtonsoft.Json.dll
+C:\Users\MAGI\source\repos\TeacherForm\bin\Debug\Newtonsoft.Json.xml
+C:\Users\MAGI\source\repos\TeacherForm\obj\Debug\TeacherForm.csproj.CopyComplete
