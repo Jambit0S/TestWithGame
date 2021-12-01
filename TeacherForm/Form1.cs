@@ -56,11 +56,15 @@ namespace TeacherForm
             }
             if (LogIn(textBoxLogin.Text, textBoxPassword.Text))
             {
-                MessageBox.Show("You are GAY");
+                //MessageBox.Show("You are GAY");
+                MainMenu newform = new MainMenu();
+                this.Hide();
+                newform.ShowDialog();
+                this.Close();
             }
             else
             {
-                MessageBox.Show("You are GREAT BIG GAY");
+                MessageBox.Show("Wrong Login or Password");
             }
 
         }
@@ -90,5 +94,14 @@ namespace TeacherForm
             }
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //textBoxLogin.AutoSize = false;
+            //textBoxPassword.AutoSize = false;
+            //Все шрифты 14 siez
+        }
+
+        
     }
 }

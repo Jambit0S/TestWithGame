@@ -11,3 +11,4 @@ C:\Users\MAGI\source\repos\TeacherForm\obj\Debug\TeacherForm.pdb
 C:\Users\MAGI\source\repos\TeacherForm\bin\Debug\Newtonsoft.Json.dll
 C:\Users\MAGI\source\repos\TeacherForm\bin\Debug\Newtonsoft.Json.xml
 C:\Users\MAGI\source\repos\TeacherForm\obj\Debug\TeacherForm.csproj.CopyComplete
+C:\Users\MAGI\source\repos\TeacherForm\obj\Debug\TeacherForm.MainMenu.resources
