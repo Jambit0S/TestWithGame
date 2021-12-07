@@ -71,7 +71,7 @@ namespace TeacherForm
 
         bool LogIn(string login, string password) 
         {
-            var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://localhost:8080/teacher/user");
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://localhost:8080/general/user");
             httpWebRequest.ContentType = "application/json";
             httpWebRequest.Method = "POST";
 

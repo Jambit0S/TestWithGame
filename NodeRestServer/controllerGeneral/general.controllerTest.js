@@ -1,6 +1,6 @@
 const db= require('../server')
 
-class StudentTestController
+class GeneralControllerTest
 {
     async getAllTests(req,res)
     {
@@ -20,4 +20,4 @@ class StudentTestController
     }
     
 }
-module.exports = new StudentTestController()
+module.exports = new GeneralControllerTest()

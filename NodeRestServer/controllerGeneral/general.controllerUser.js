@@ -1,6 +1,6 @@
 const db= require('../server')
 
-class StudentUserController
+class GemeralControllerUser
 {
     async checkUserData(req,res)
     {
@@ -26,4 +26,4 @@ class StudentUserController
         res.json(customization.rows[0].customization)
     }
 }
-module.exports = new StudentUserController()
+module.exports = new GemeralControllerUser()

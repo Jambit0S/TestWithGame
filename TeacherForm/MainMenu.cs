@@ -16,82 +16,44 @@ namespace TeacherForm
         {
             InitializeComponent();
         }
-        private bool peekMenu;
-        private bool themes;
-        private bool tests;
-        private bool stats;
-
-        private void themeListToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            SwitcherPanels(menuStrip1.Items.IndexOf(themeListToolStripMenuItem)+1);         
-        }
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
-            SwitcherPanels(0); //Инициализация bool
+            tabControl1.Appearance = TabAppearance.FlatButtons;
+            tabControl1.ItemSize = new Size(0, 1);
+            tabControl1.SizeMode = TabSizeMode.Fixed;
+            //tabControl1.Location = new Point(tabControl1.Location.X,-36);
+            //tabControl1.Size = new Size(tabControl1.Size.Width, 688);
+            //tabPageMenu.Hide();
+            tabPageMenu.BackColor = Color.Bisque;
+            tabPageTheme.BackColor = Color.Bisque;
+            tabPageTest.BackColor = Color.Bisque;
+            tabPageStats.BackColor = Color.Bisque;
         }
-        
 
-        private void mainToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SwitcherPanels(menuStrip1.Items.IndexOf(mainToolStripMenuItem) + 1);            
+            tabControl1.SelectedTab = tabPageMenu;
+        }
+
+        private void themesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPageTheme;
+            UpdateThemesDataGrid(dataGridView1);
         }
 
         private void testsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SwitcherPanels(menuStrip1.Items.IndexOf(testsToolStripMenuItem) + 1);            
+            tabControl1.SelectedTab = tabPageTest;
         }
 
-        private void statsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void statisticToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SwitcherPanels(menuStrip1.Items.IndexOf(statsToolStripMenuItem) + 1);            
+            tabControl1.SelectedTab = tabPageStats;
         }
-        private void SwitcherPanels(int indexPanel)
+        void UpdateThemesDataGrid(DataGridView datagrid) 
         {
-            switch (indexPanel)
-            {
-                case 0:
-                    peekMenu = false;
-                    themes = false;
-                    tests = false;
-                    stats = false;
-                    break;
-                case 1:
-                    peekMenu = true;
-                    themes = false;
-                    tests = false;
-                    stats = false;
-                    break;
-                case 2:
-                    peekMenu = false;
-                    themes = true;
-                    tests = false;
-                    stats = false;
-                    break;
-                case 3:
-                    peekMenu = false;
-                    themes = false;
-                    tests = true;
-                    stats = false;
-                    break;
-                case 4:
-                    peekMenu = false;
-                    themes = false;
-                    tests = false;
-                    stats = true;
-                    break;
-                default:
-                    throw new Exception("Picked panel dont exist in switch");
-                    break;
-            }
-            PanelVisible();
-        }
-        void PanelVisible() 
-        {
-            panelMain.Visible = peekMenu;
-            panelTheme.Visible = themes;
-            panelTest.Visible = tests;
-            panelStast.Visible = stats;
+           
         }
     }
 }

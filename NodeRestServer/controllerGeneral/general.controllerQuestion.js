@@ -1,6 +1,6 @@
 const db= require('../server')
 
-class StudentQuestionController
+class generalControllerQuestion
 {
     async getAllQuestions(req,res)
     {
@@ -15,4 +15,4 @@ class StudentQuestionController
     }
     
 }
-module.exports = new StudentQuestionController()
+module.exports = new generalControllerQuestion()
