@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="AddForm.AddFormController"
+            prefHeight="400.0" prefWidth="600.0">
+    <Label layoutY="15" layoutX="15" text="Наименование" />
+    <ComboBox layoutY="15" layoutX="150" prefWidth="200" fx:id="MyComboBox"/>
+    <Label layoutY="60" layoutX="15" text="Количетсво" />
+    <Spinner layoutY="60" layoutX="150" prefWidth="200" min="1" max="100" fx:id="MySpinner"/>
+    <Label layoutY="100" layoutX="15" text="Цена" />
+    <ScrollBar layoutX="150" layoutY="100" prefWidth="200" fx:id="MyScroll" onDragDetected="#DragDone" />
+    <Label layoutX="75" layoutY="120" fx:id="MyLabel" text="1"/>
+
+    <RadioButton text="Без параметров" fx:id="FirstRButton"  layoutY="150" layoutX="15" />
+    <RadioButton text="С параметрами" fx:id="SecondRButton" layoutY="180" layoutX="15"/>
+
+    <Button text="Добавить" layoutX="15" layoutY="300" prefWidth="100" onAction="#AddInTable"/>
+    <Button text="Отмена" layoutX="250" layoutY="300" prefWidth="100" onAction="#ExitButt" />
+
+</AnchorPane>
