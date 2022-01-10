@@ -29,12 +29,34 @@ namespace TeacherForm
         /// </summary>
         private void InitializeComponent()
         {
+            this.labelGreet = new System.Windows.Forms.Label();
+            this.labelGreetText = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.labelGreet = new System.Windows.Forms.Label();
-            this.labelGreetText = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // labelGreet
+            // 
+            this.labelGreet.AutoSize = true;
+            this.labelGreet.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.labelGreet.Location = new System.Drawing.Point(147, 23);
+            this.labelGreet.Name = "labelGreet";
+            this.labelGreet.Size = new System.Drawing.Size(182, 24);
+            this.labelGreet.TabIndex = 3;
+            this.labelGreet.Text = "Добро пожаловать";
+            this.labelGreet.Click += new System.EventHandler(this.labelGreet_Click);
+            // 
+            // labelGreetText
+            // 
+            this.labelGreetText.AutoSize = true;
+            this.labelGreetText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.labelGreetText.Location = new System.Drawing.Point(392, 23);
+            this.labelGreetText.Name = "labelGreetText";
+            this.labelGreetText.Size = new System.Drawing.Size(110, 24);
+            this.labelGreetText.TabIndex = 4;
+            this.labelGreetText.Text = "SampleTest";
             // 
             // button3
             // 
@@ -66,25 +88,15 @@ namespace TeacherForm
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // labelGreet
+            // button4
             // 
-            this.labelGreet.AutoSize = true;
-            this.labelGreet.Font = new System.Drawing.Font("Leelawadee UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGreet.Location = new System.Drawing.Point(141, 25);
-            this.labelGreet.Name = "labelGreet";
-            this.labelGreet.Size = new System.Drawing.Size(303, 37);
-            this.labelGreet.TabIndex = 3;
-            this.labelGreet.Text = "Добро пожаловать";
-            // 
-            // labelGreetText
-            // 
-            this.labelGreetText.AutoSize = true;
-            this.labelGreetText.Font = new System.Drawing.Font("Leelawadee UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGreetText.Location = new System.Drawing.Point(487, 25);
-            this.labelGreetText.Name = "labelGreetText";
-            this.labelGreetText.Size = new System.Drawing.Size(166, 37);
-            this.labelGreetText.TabIndex = 4;
-            this.labelGreetText.Text = "SampleTest";
+            this.button4.Location = new System.Drawing.Point(464, 161);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // MainMenu
             // 
@@ -92,6 +104,7 @@ namespace TeacherForm
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(1064, 656);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.labelGreetText);
             this.Controls.Add(this.labelGreet);
             this.Controls.Add(this.button3);
@@ -116,5 +129,6 @@ namespace TeacherForm
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label labelGreet;
         private System.Windows.Forms.Label labelGreetText;
+        private System.Windows.Forms.Button button4;
     }
 }

@@ -7,6 +7,13 @@ class GemeralControllerTheme
         const user = await db.query(`SELECT * FROM theme`)
         res.json(user.rows)
     }
+    async getOneTheme(req,res)
+    {
+        const id=req.params.id
+        const user = await db.query(`SELECT * FROM theme where id=$1`,[id])
+        res.json(user.rows[0])
+
+    }
     async getMicroThemes(req,res)
     {
         const theme = await db.query (`SELECT *FROM microtheme`)

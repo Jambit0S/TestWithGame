@@ -51,7 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classJSON\Lesson.cs" />
     <Compile Include="classJSON\MicroTheme.cs" />
+    <Compile Include="classJSON\Questions.cs" />
+    <Compile Include="classJSON\Test.cs" />
+    <Compile Include="Forms\CustomPanel.cs" />
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>

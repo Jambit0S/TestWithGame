@@ -20,7 +20,7 @@ namespace TeacherForm
             name = "none";
             microthemelistid =new int[]{1,2,3};
         }
-        public List<Theme> JsonParse(string JsonString) 
+        public List<Theme> JsonParseObjects(string JsonString) 
         {
             Theme a = new Theme();
 
@@ -32,6 +32,17 @@ namespace TeacherForm
             List<Theme> myThemes = (List<Theme>)bigObject;
             return myThemes;
         }
+        public Theme JsonParseObject(string JsonString)
+        {
+            Theme a = new Theme();
 
+            string jsonData = JsonConvert.SerializeObject(a);
+
+            //List<Theme> obj = new List<Theme>();
+            var obj = JsonConvert.DeserializeObject<Theme>(JsonString);
+            Object bigObject = (Object)obj;
+            Theme myTheme = (Theme)bigObject;
+            return myTheme;
+        }
     }
 }

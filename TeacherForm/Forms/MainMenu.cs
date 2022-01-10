@@ -53,7 +53,7 @@ namespace TeacherForm
                 List<Theme> themes = new List<Theme>();
                 {
                     Theme objCreate = new Theme();
-                    themes = objCreate.JsonParse(responseFromServer);
+                    themes = objCreate.JsonParseObjects(responseFromServer);
                 }
                 MessageBox.Show(themes[0].name);
                 return themes;
@@ -85,8 +85,19 @@ namespace TeacherForm
             }
 
         }
-        
 
+        private void labelGreet_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            QuestionForm queform = new QuestionForm();
+            this.Hide();
+            queform.ShowDialog();
+            queform.Close();
+            this.Show();
+        }
     }
 }
