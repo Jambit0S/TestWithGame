@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="AddForm.AddFormController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <Label layoutX="20" layoutY="15" text="Login*"/>
+    <TextField fx:id="LoginBox" layoutY="40" layoutX="20" prefWidth="300" prefHeight="20"/>
+    <Label layoutX="20" layoutY="90" text="Password*"/>
+    <TextField fx:id="PasswordBox" layoutX="20" layoutY="115" prefWidth="300" prefHeight="20"/>
+    <Label layoutX="20" layoutY="165" text="FirstName*"/>
+    <TextField fx:id="FirNameBox" layoutX="20" layoutY="190" prefWidth="300" prefHeight="20"/>
+    <Label layoutX="20" layoutY="240" text="SecondName*"/>
+    <TextField fx:id="SecNameBox" layoutX="20" layoutY="265" prefWidth="300" prefHeight="20"/>
+    <Label layoutX="20" layoutY="315" text="Patronomic"/>
+    <TextField fx:id="PatrBox" layoutX="20" layoutY="340" prefWidth="300" prefHeight="20"/>
+    <Button onAction="#ButtonAddUser" text="Добавить" layoutX="450" layoutY="300" prefHeight="50" prefWidth="100"/>
+
+</AnchorPane>

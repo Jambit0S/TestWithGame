@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="base.Controller"
+            prefHeight="600.0" prefWidth="1000"
+>
+
+
+    <ToolBar>
+        <Button onAction="#ButtonAdd" prefWidth="220" prefHeight="30" text="Добавить"/>
+        <Button onAction="#ButtonUpdate" prefWidth="150" prefHeight="30" text="Обновить"/>
+
+    </ToolBar>
+
+    <TableView fx:id="tableView" GridPane.columnIndex="0" GridPane.rowIndex="1" layoutX="15" layoutY="60" onMouseClicked="#ClickedCell" >
+        <columns>
+            <TableColumn fx:id="UserFirstName" text="Фамилия" prefWidth="150" >
+            </TableColumn>
+            <TableColumn fx:id="UserSecondName" text="Имя" prefWidth="150">
+            </TableColumn>
+            <TableColumn fx:id="UserPatronomic" text="Отчество" prefWidth="150">
+            </TableColumn>
+            <TableColumn fx:id="UserLogin" text="Логин" prefWidth="150">
+            </TableColumn>
+            <TableColumn fx:id="UserPassword" text="Пароль" prefWidth="150">
+            </TableColumn>
+            <TableColumn fx:id="UserCustomization" text="Custom" prefWidth="150">
+            </TableColumn>
+        </columns>
+    </TableView>
+
+
+
+</AnchorPane>
