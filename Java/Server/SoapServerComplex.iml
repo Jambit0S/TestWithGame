@@ -7,5 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="sqljdbc_9.2.0.0_rus" level="project" />
+    <orderEntry type="library" name="postgresql-42.2.19" level="project" />
   </component>
 </module>

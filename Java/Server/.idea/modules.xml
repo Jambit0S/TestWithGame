@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ServerFirstLab.iml" filepath="$PROJECT_DIR$/ServerFirstLab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SoapServerComplex.iml" filepath="$PROJECT_DIR$/SoapServerComplex.iml" />
     </modules>
   </component>
 </project>
