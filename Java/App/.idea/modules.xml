@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/seclabZemClient.iml" filepath="$PROJECT_DIR$/seclabZemClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ClientFirstLab.iml" filepath="$PROJECT_DIR$/ClientFirstLab.iml" />
     </modules>
   </component>
 </project>

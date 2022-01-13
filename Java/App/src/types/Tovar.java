@@ -1,117 +1,82 @@
-
 package types;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlType;
+import java.io.Serializable;
 
+public class Tovar  implements Serializable {
 
-/**
- * <p>Java class for tovar complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="tovar">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="count" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="price" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
- */
-@XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "tovar", propOrder = {
-    "count",
-    "id",
-    "name",
-    "price"
-})
-public class Tovar {
+    private int id;
+    private String name;
 
-    protected int count;
-    protected int id;
-    protected String name;
-    protected int price;
+    private int count;
 
-    /**
-     * Gets the value of the count property.
-     * 
-     */
-    public int getCount() {
-        return count;
+    private int price;
+
+    public Tovar() {
+
+        this.id=0;
+        this.name = "";
+
+        this.count = 0;
+
+        this.price = 0;
+
     }
 
-    /**
-     * Sets the value of the count property.
-     * 
-     */
-    public void setCount(int value) {
-        this.count = value;
-    }
+    public Tovar(int id, String name, int count, int price) {
+        this.id=id;
+        this.name = name;
+        this.count = count;
+        this.price = price;
 
-    /**
-     * Gets the value of the id property.
-     * 
-     */
-    public int getId() {
+    }
+    public Tovar(String name, int count,int price)
+    {
+        this.count=count;
+        this.name=name;
+        this.price=price;
+    }
+    public int getId(){
         return id;
     }
 
-    /**
-     * Sets the value of the id property.
-     * 
-     */
-    public void setId(int value) {
-        this.id = value;
+    public int getCount() {
+
+        return count;
+
     }
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
+    public void setCount(int kol) {
+
+        this.count = kol;
+
+    }
+
     public String getName() {
+
         return name;
+
     }
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
+    public void setName(String name) {
+
+        this.name = name;
+
     }
 
-    /**
-     * Gets the value of the price property.
-     * 
-     */
     public int getPrice() {
+
         return price;
+
     }
 
-    /**
-     * Sets the value of the price property.
-     * 
-     */
-    public void setPrice(int value) {
-        this.price = value;
+    public void setPrice(int price) {
+
+        this.price = price;
+
+    }
+    public  double getSumm()
+    {
+        return count*price;
     }
 
 }

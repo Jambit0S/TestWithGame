@@ -4,8 +4,6 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 import java.util.List;
-
-import groovy.util.ObservableList;
 import types.Tovar;
 
 public class TovarOperationImpl extends UnicastRemoteObject implements TovarOperation {
@@ -21,13 +19,11 @@ public class TovarOperationImpl extends UnicastRemoteObject implements TovarOper
 
     @Override
     public List<Tovar> getListOfTovar() throws RemoteException{
-        System.out.println("Get list of tovar");
         return lstTovar;
     }
 
     @Override
     public List<Tovar> addNewTovar(Tovar item)throws RemoteException{
-        System.out.println("Add new tovar");
         //lstTovar.add(item);
         int count=Count();
         //System.out.print(count);
@@ -36,15 +32,12 @@ public class TovarOperationImpl extends UnicastRemoteObject implements TovarOper
     }
     @Override
     public int getSumOfTovar()throws RemoteException{
-        System.out.println("Print summ of tovar");
         int sum = 0;
         for(Tovar tovar: lstTovar)
             sum += tovar.getCount() * tovar.getPrice();
         return sum;
 
     }
-
-
     public int Count()
     {
         int number=0;
